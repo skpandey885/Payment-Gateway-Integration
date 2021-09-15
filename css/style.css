@@ -3,6 +3,17 @@
     padding: 0;
     box-sizing: border-box;
 }
+.navbar{
+    animation-name: anim2;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+}
+#carouselExampleControls{
+    animation-name: anim2;
+    animation-duration: 1s;
+    animation-iteration-count: 1;   
+}
+
 .navbar-brand img{
     height: 45px;
     width: 45px;
@@ -21,7 +32,11 @@ font-size: 30px;
   height: 100vh;
   background-size:cover;
   color: aliceblue; 
+  animation-name: anim2;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
 }
+
 .nav-item{
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -50,12 +65,87 @@ margin-left: 30px;
     transition: .2s all ease-in;
     border: 0px solid;
     font-family: 'Caveat', cursive;
-    /* font-size: 40px; */
+    
 }
 .button1:hover{
     background-color: cornsilk;
     color: rgb(0, 0, 116);
     border: 0px solid;
 border-radius: 40px;
+
+}
+
+.d-block{
+    height: 500px;
+    width: 100%;
+    filter:brightness(.5);
+}
+.carousel-caption h5{
+margin-top: -100px;
+}
+
+@keyframes anim1 {
+    From{ 
+           padding-top: 0px;
+           opacity: 0;
+    }
+    To{
+        padding-top: 10%;
+        opacity: 1;
+    }
+}
+@keyframes anim2 {
+    From{ 
+        margin-top: -100px;
+           opacity: 0;
+    }
+    To{
+       margin-top: 0px;
+        opacity: 1;
+    }
+}
+
+
+.textbox{
+    height: 800px;
+    border: 2px solid black;
+    text-align: center;
+   padding: 0 100px;
+   padding-top: 10%;
+   animation-name: anim1;
+   animation-duration: 2s;
+   animation-iteration-count: 1;
+
+}
+#purpose{
+    font-family: 'Caveat', cursive;
+    margin-top: 50px;
+}
+.purposetext{
+    letter-spacing: 2px;
+}
+#reachUs{
+border: 0px solid rgba(88, 127, 255, 0);
+color: rgba(0, 0, 0, 0.966);
+height: 50px;
+width: 150px;
+margin-top: 100px;
+}
+#reachUs:hover{
+    border: 2px solid cornflowerblue;
+    transition: .2s ease-in all;
+    border-radius: 40px;
+    background-color: cornflowerblue;
+    color: rgb(26, 14, 54);
+  
+}
+#textmain{
+    font-family: 'Urbanist', sans-serif;
+    font-size: 30px;
+}
+#line{
+ width: 50px;
+    border: 2px solid rgb(18, 150, 202);
+    margin-left: 45.5%;
 
 }

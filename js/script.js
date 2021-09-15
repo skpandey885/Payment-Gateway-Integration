@@ -1,3 +1,6 @@
+
+
+                                 // Razorpay Javascript
 var options = {
     "key": "rzp_test_HF1N4MKArx8NFe", // Enter the Key ID generated from the Dashboard
     "amount": "", // Amount is in currency subunits. Default currency is INR. Hence, 50000 refers to 50000 paise
@@ -37,3 +40,5 @@ document.getElementById('rzp-button1').onclick = function(e){
     rzp1.open();
     e.preventDefault();
 }
+
+
